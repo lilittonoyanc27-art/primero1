@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-size: 17px;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Armenian', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out forwards;
+}
